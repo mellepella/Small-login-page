@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body id="body">
+
+<link href="variables.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+
+<script src="addEventListener.js"></script>
+<script src="alert.js"></script>
+<script src="clock.js"></script>
+<script src="log.js"></script>
+<script src="redirect.js"></script>
+<script src="validate.js"></script>
+
+<div class="bg">
+</div>
+
+<div class="text-center card center" id="login">	
+	<form id="login-form">
+		<div class="row">
+			<h1>Login</h1>
+		</div>
+		<div class="row">
+			<input class="input" id="email" type="email" placeholder="Email">
+		</div>
+		<div class="row">
+			<input class="input" id="password" type="password" placeholder="Password">
+		</div>
+		<div class="row">
+			<input class="btn text-center" type="submit" value="Login">
+		</div>
+		<div class="alert"><p id="alert-danger" class="alert-danger"></p></div>
+	</form>
+</div>
+</body>
+<style>
+
+
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn {
+		border-radius: 5px;
+		color: white;
+		padding: 5px;
+		width: 165px;
+		background-color: #328da8;
+		border: 1px solid transparent;
+		transition: 0.2s;
+	}
+
+	.btn:focus {
+		border-color: var(--darker-blue-color);
+	}
+
+	.btn:hover {
+		cursor: pointer;
+		background-color: var(--dark-blue-color); 
+	}
+
+	body, html {
+		height: 100%;
+		margin: 0px;
+	}
+
+	body {
+		font-family: 'Ubuntu', sans-serif;
+		color: white;
+	}
+
+	.bg {
+		height: 100%;
+		background-image: url("firewatch.jpg");
+		background-size: cover;
+	}
+	
+	.center {
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		left: 50%;
+	}
+
+	::-ms-input-placeholder {
+ 		color: white;
+		opacity: 0.5;
+	}
+
+	::placeholder {
+		color: white;
+		opacity: 0.5;
+	}
+
+	.row {
+		display: block;
+		padding: 10px;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.input {
+		border: 1px solid var(--light-color);
+		background-color: rgba(0, 0, 0, 0.4);
+		border-radius: 5px;
+		padding: 5px;
+		color: var(--light-color);
+		width: 150px;
+		transition: 0.2s;
+	}
+
+	.input:focus {
+		border-color: #328da8;
+		width: 160px;
+	}
+
+	.card {
+		width: 300px;
+		background-color: rgba(0, 0, 0, 0.3);
+		border: solid 2px var(--light-color);
+		border-radius: 5px;
+		transition: 0.2s;
+		padding: 5px;
+		padding-bottom: 15px;
+		box-shadow: 0px 0px  20px rgba(0, 0, 0, 0.2);
+	}
+	
+	.card:hover {
+		padding: 10px;
+		padding-bottom: 20px;
+	}
+
+	.alert-danger {
+		font-size: 13px;
+		color: red;
+	}
+
+</style>
+</html>
